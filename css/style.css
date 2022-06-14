@@ -1,0 +1,177 @@
+/* @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: rgb(67, 67, 67);
+}
+
+header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+
+main {
+  height: 65vh;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left {
+  width: 52rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  width: 52rem;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  border-radius: 10px;
+  background: #eee;
+  color: rgb(50, 49, 49);
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.between {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.again {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: red;
+}
+
+.guess {
+  border-radius: 10px;
+  background: white;
+  border: 1px solid rgb(0, 0, 0);
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  padding: 2.5rem;
+  width: 25rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+  color: black;
+}
+
+.btn {
+  border-radius: 10px;
+  border: none;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(0, 255, 34);
+}
+
+.message {
+  margin-bottom: 8rem;
+  height: 3rem;
+}
+
+.label-score {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 440px) {
+  header {
+    height: 35vh;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .left {
+    width: 100%;
+    height: 32.5vh;
+  }
+  
+  .right {
+    width: 100%;
+    height: 32.5vh;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .number {
+  /* width: 100%; */
+  height: fit-content;
+  font-size: 2.5rem;
+  bottom: 20%;
+  }
+  
+  .between {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  
+  .again {
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+  
+  .guess {
+    border-radius: 10px;
+    background: white;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: inherit;
+
+  }
+}
+
